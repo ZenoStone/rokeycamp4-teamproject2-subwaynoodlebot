@@ -1,0 +1,9 @@
+# request
+int32 order_num
+string menu
+string status
+---
+# result
+int32 order_num
+string menu
+string status
