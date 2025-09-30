@@ -1,10 +1,10 @@
 #!/bin/bash
-# portfolio_setup.sh - ROS2 Doosan Robot Project Portfolio Setup Script
+# subwaynoodlebot_setup.sh - ROS2 Doosan Robot Project Setup Script
 # This script automates the setup of the entire project, including custom code.
 
  #  1. 필요한 시스템 및 ROS 패키지를 설치합니다.
  #  2. 원본 두산 로보틱스 GitHub 저장소(DoosanBootcam3rdCo1)를 복제합니다.
- #  3. 사용자의 포트폴리오 GitHub 저장소를 복제합니다. (이 부분은 사용자가 직접 만들고 URL을 수정해야 합니다)
+ #  3. rokeycamp4-teamproject2-subwaynoodlebot GitHub 저장소에서 필요한 파일을 복제합니다.
  #  4. 복제된 사용자의 파일들을 DoosanBootcam3rdCo1 내의 올바른 위치로 이동시킵니다.
  #  5. 프로젝트 빌드 및 환경 설정을 마무리합니다.
 
@@ -78,7 +78,7 @@ print_step "Cloning gz_ros2_control repository..."
 git clone https://github.com/gazebosim/gz_ros2_control.git
 
 # --- Clone YOUR portfolio project repository ---
-print_step "Cloning your portfolio project repository..."
+git clone https://github.com/ZenoStone/rokeycamp4-teamproject2-subwaynoodlebot.git my_custom_project
 #
 # ❗❗❗ IMPORTANT ❗❗❗
 # YOU MUST REPLACE THE URL BELOW WITH YOUR OWN GITHUB REPOSITORY URL.
